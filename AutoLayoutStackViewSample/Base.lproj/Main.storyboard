@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -47,13 +48,26 @@
                                     <constraint firstAttribute="height" constant="60" id="ely-fW-8Y0"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMk-35-ZAC">
+                                <rect key="frame" x="16" y="310" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="84k-u9-Y4J"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="nl8-HA-Pvd" kind="show" id="BVO-Ig-OrZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="i0K-at-tZL" firstAttribute="top" secondItem="UUL-xo-G2L" secondAttribute="bottom" id="0bZ-G5-lny"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GMk-35-ZAC" secondAttribute="trailing" id="BYg-BY-ftU"/>
                             <constraint firstItem="UUL-xo-G2L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="F7A-0q-aZC"/>
+                            <constraint firstItem="GMk-35-ZAC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="QNT-oG-jUk"/>
                             <constraint firstAttribute="trailing" secondItem="UUL-xo-G2L" secondAttribute="trailing" id="d4d-6h-KV7"/>
                             <constraint firstItem="i0K-at-tZL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hkX-fd-yPP"/>
+                            <constraint firstItem="GMk-35-ZAC" firstAttribute="top" secondItem="i0K-at-tZL" secondAttribute="bottom" id="iFN-RH-gEX"/>
                             <constraint firstItem="UUL-xo-G2L" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="kAT-72-6uS"/>
                             <constraint firstAttribute="trailing" secondItem="i0K-at-tZL" secondAttribute="trailing" id="sXB-PM-Yau"/>
                         </constraints>
@@ -62,6 +76,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Agh-Hn-DjE">
+            <objects>
+                <viewController id="nl8-HA-Pvd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0pF-J1-FZf"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z7g-LS-q81"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fMn-MV-raD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ErJ-0v-WdZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1381" y="178"/>
         </scene>
     </scenes>
     <resources>
