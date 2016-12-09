@@ -88,7 +88,51 @@
                     <view key="view" contentMode="scaleToFill" id="fMn-MV-raD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="k2g-tx-KIx">
+                                <rect key="frame" x="0.0" y="20" width="375" height="90"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SampleIcon" translatesAutoresizingMaskIntoConstraints="NO" id="gZp-jK-NKR">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="90"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SampleIcon" translatesAutoresizingMaskIntoConstraints="NO" id="XeW-rK-Jqj">
+                                        <rect key="frame" x="125" y="0.0" width="125" height="90"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SampleIcon" translatesAutoresizingMaskIntoConstraints="NO" id="7xE-Bw-QEG">
+                                        <rect key="frame" x="250" y="0.0" width="125" height="90"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="J4K-a8-74j"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="7xr-yn-cdG">
+                                <rect key="frame" x="0.0" y="110" width="375" height="90"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StringSample" translatesAutoresizingMaskIntoConstraints="NO" id="Y9s-mc-S31">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="90"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StringSample" translatesAutoresizingMaskIntoConstraints="NO" id="VlR-Ld-Ap4">
+                                        <rect key="frame" x="125" y="0.0" width="125" height="90"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StringSample" translatesAutoresizingMaskIntoConstraints="NO" id="f29-K7-gNC">
+                                        <rect key="frame" x="250" y="0.0" width="125" height="90"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="cgG-Aw-Utz"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7xr-yn-cdG" firstAttribute="top" secondItem="k2g-tx-KIx" secondAttribute="bottom" id="BW9-CG-Py1"/>
+                            <constraint firstAttribute="trailing" secondItem="k2g-tx-KIx" secondAttribute="trailing" id="CCH-wa-Cph"/>
+                            <constraint firstAttribute="trailing" secondItem="7xr-yn-cdG" secondAttribute="trailing" id="UHv-ts-btC"/>
+                            <constraint firstItem="7xr-yn-cdG" firstAttribute="leading" secondItem="fMn-MV-raD" secondAttribute="leading" id="Y7M-p1-mK6"/>
+                            <constraint firstItem="k2g-tx-KIx" firstAttribute="leading" secondItem="fMn-MV-raD" secondAttribute="leading" id="lXp-oQ-ULq"/>
+                            <constraint firstItem="k2g-tx-KIx" firstAttribute="top" secondItem="0pF-J1-FZf" secondAttribute="bottom" id="mmR-GX-MJb"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ErJ-0v-WdZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -98,5 +142,6 @@
     </scenes>
     <resources>
         <image name="SampleIcon" width="1280" height="774"/>
+        <image name="StringSample" width="518" height="748"/>
     </resources>
 </document>
